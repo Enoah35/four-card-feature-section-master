@@ -1,0 +1,98 @@
+@import "config";
+
+// General CSS
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 1.5;
+  background: $color-vlight-gray;
+}
+
+h1 {
+  font-weight: 600;
+  color: $color-vdark-blue;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+// Utility classes
+
+.l-heading {
+  font-size: 28px;
+}
+
+.m-heading {
+  font-size: 20px;
+}
+
+// Main CSS
+
+.main-header {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 5rem 0 3rem;
+  h1 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 200;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  line-height: 2;
+
+  .box {
+    font-size: 13px;
+    height: 250px;
+    padding: 1.5rem;
+    margin: 0rem 1rem 1rem 1rem;
+    border: 1px $color-vlight-gray solid;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px $color-grayish-blue;
+
+    img {
+      margin-top: 2rem;
+      float: right;
+    }
+
+    &:first-child {
+      border-top: 3px $color-cyan solid;
+    }
+    &:nth-child(2) {
+      border-top: 3px $color-red solid;
+    }
+    &:nth-child(3) {
+      border-top: 3px $color-orange solid;
+    }
+    &:last-child {
+      border-top: 3px $color-blue solid;
+    }
+  }
+}
+
+// Footer
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@import "mobile";

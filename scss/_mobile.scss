@@ -1,0 +1,57 @@
+// Desktop view changes
+
+@media (min-width: 376px) {
+  .main-header {
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      padding: 0 37rem;
+    }
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3rem;
+    .box {
+      width: 75%;
+
+      &:first-child {
+        justify-self: end;
+        position: relative;
+        left: 5rem;
+        top: 9rem;
+      }
+
+      &:nth-child(2) {
+        justify-self: center;
+      }
+
+      &:nth-child(3) {
+        justify-self: start;
+        position: relative;
+        right: 5rem;
+        top: 9rem;
+        img {
+          margin-top: 4rem;
+        }
+      }
+
+      &:last-child {
+        justify-self: end;
+        position: relative;
+        left: 32.25rem;
+      }
+
+      &:nth-child(odd) {
+        img {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}
