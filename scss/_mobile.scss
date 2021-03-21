@@ -1,11 +1,6 @@
 // Desktop view changes
 
-@media (min-width: 376px) {
-  body {
-    max-width: $web-maxwidth;
-    margin: 10rem;
-  }
-
+@media (min-width: 1200px) {
   .main-header {
     h1 {
       font-size: 36px;
@@ -15,47 +10,37 @@
     }
 
     p {
-      padding: 0 28rem;
+      display: inline-block;
     }
   }
-
-  .container {
-    // max-width: $web-maxwidth;
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 3rem;
-    .box {
-      width: 75%;
-
-      &:first-child {
-        justify-self: end;
-        position: relative;
-        left: 4rem;
-        top: 9rem;
-      }
-
-      &:nth-child(2) {
-        justify-self: center;
-      }
-
-      &:nth-child(3) {
-        justify-self: start;
-        position: relative;
-        right: 4rem;
-        top: 9rem;
-        img {
-          margin-top: 4rem;
+  .outer-container {
+    margin: 5rem 20rem;
+    .container {
+      grid-template-columns: repeat(3, 10fr);
+      grid-template-rows: repeat(2, 2fr);
+      .box {
+        &:first-child {
+          position: relative;
+          top: 9rem;
         }
-      }
 
-      &:last-child {
-        justify-self: end;
-        position: relative;
-        left: 27.5rem;
-      }
+        &:nth-child(3) {
+          position: relative;
+          top: 9rem;
+          img {
+            margin-top: 4rem;
+          }
+        }
 
-      &:nth-child(odd) {
-        img {
-          margin-top: 3rem;
+        &:last-child {
+          grid-column: 2 / 2;
+          grid-row: 2 / 3;
+        }
+
+        &:nth-child(odd) {
+          img {
+            margin-top: 3rem;
+          }
         }
       }
     }
