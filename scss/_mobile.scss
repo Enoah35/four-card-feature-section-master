@@ -1,6 +1,11 @@
 // Desktop view changes
 
 @media (min-width: 376px) {
+  body {
+    max-width: $web-maxwidth;
+    margin: 10rem;
+  }
+
   .main-header {
     h1 {
       font-size: 36px;
@@ -10,11 +15,12 @@
     }
 
     p {
-      padding: 0 37rem;
+      // padding: 0 58rem;
     }
   }
 
   .container {
+    // max-width: $web-maxwidth;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 3rem;
     .box {
@@ -23,7 +29,7 @@
       &:first-child {
         justify-self: end;
         position: relative;
-        left: 5rem;
+        left: 4rem;
         top: 9rem;
       }
 
@@ -34,7 +40,7 @@
       &:nth-child(3) {
         justify-self: start;
         position: relative;
-        right: 5rem;
+        right: 4rem;
         top: 9rem;
         img {
           margin-top: 4rem;
@@ -44,7 +50,7 @@
       &:last-child {
         justify-self: end;
         position: relative;
-        left: 32.25rem;
+        left: 27.5rem;
       }
 
       &:nth-child(odd) {
