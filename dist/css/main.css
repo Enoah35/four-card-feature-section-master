@@ -74,6 +74,8 @@ h2 {
     font-size: 36px; }
   .main-header h2 {
     font-size: 36px; }
+  .main-header p {
+    padding: 0 28rem; }
   .container {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 3rem; }
